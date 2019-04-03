@@ -137,7 +137,7 @@ class List extends Component {
     );
   }
   scanActionFormatter = (cell, row) => {
-    if (row.status === 'Progress') {
+    if (row.status === 'Progress' || row.status == 'Picked') {
       return (
         <div class="progress">
           <div class="progress-bar progress-bar-striped progress-bar-animated progress-bar-green" role="progressbar" style={progressBarStyle} aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
